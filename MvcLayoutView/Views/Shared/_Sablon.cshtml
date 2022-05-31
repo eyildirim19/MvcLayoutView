@@ -1,0 +1,145 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/style/style.css" rel="stylesheet" />
+    <link href="~/font/css/all.min.css" rel="stylesheet" />
+    <link rel="icon" href="https://www.btakademi.com/images/favicon.ico" type="image/x-icon" />
+    <title>BT Akademi - Ana Sayfa</title>
+</head>
+<body>
+
+    <div class="container-fluid headerRow1">
+        <div class="container">
+            <div class="row ust1">
+                <div class="col">
+                    <ul id="MenuKisayol">
+                        <li>
+                            <a href="https://www.btakademi.com/haberler">Haber & Duyurular</a>
+                        </li>
+                        <li id="sperator">
+                            <a>|</a>
+                        </li>
+                        <li>
+                            <a href="https://www.btakademi.com/humanResources">İnsan Kaynakları</a>
+                        </li>
+                    </ul>
+
+                    <div class="clearFix"></div>
+
+                    <ul id="sosyalmedya">
+                        <li>
+                            <a href="https://www.facebook.com/BTAkademi/">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/BT_AkademiTR">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/bt_akademi/">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/btakademi/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/user/BTAkademi/feed">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ustSag">
+                    <div id="searchPanel">
+                        <input type="text" placeholder="Hangi Eğitimi Aramıştınız?" id="txtSearch" />
+                        <input type="button" id="btnSearch" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid headerRow2">
+        <div class="container">
+            <div class="row ust2">
+                <div class="ustSol">
+                    <a href="/Home/Index">
+                        <img id="logo" src="https://www.btakademi.com/images/btAkademi_logo.png" />
+                    </a>
+                </div>
+
+                <div class="col ustSag">
+                    <div id="soru2" class="">
+                        <div id="soruSol" class="">
+                            <i class="fa-solid fa-envelope soruIconText"></i>
+                        </div>
+                        <div id="soruSag">
+                            EMAİL
+                            <br />
+                            info@btakademi.com
+                        </div>
+                    </div>
+
+                    <table id="soru1">
+                        <tr>
+                            <td rowspan="2" style="padding:10px;">
+                                <i class="fa-solid fa-square-phone soruIconText"></i>
+                            </td>
+                            <td style="vertical-align:bottom; color: gray">
+                                SORUNUZ MU VAR?
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:top">
+                                (216) 342 8010
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid headerRow3">
+        <div class="container">
+            <div class="row ust3">
+                <div class="ustSol">
+                    <nav class="navbar navbar-expand-lg bg-black">
+
+                        <a class="btn btn-light" href="/Home/Index">Anasayfa</a>
+                        <a class="btn btn-dark" href="/Hakkimizda/Index">Hakkımızda</a>
+                        <a class="btn btn-dark" href="#">Eğitimler</a>
+                        <a class="btn btn-dark" href="/EgitimTakvimi/Index">Eğitim Takvimi</a>
+                        <a class="btn btn-dark" href="/Iletisim/Index">İletişim</a>
+
+                    </nav>
+                </div>
+
+                <ul class="col ustSag basvur">
+                    <li>
+                        <a id="btnBasvur" href="https://www.btakademi.com/">HEMEN BAŞVUR</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--bu viewi layout olarak kullanan al viewları (content view) tam burada render et..-->
+
+    <div class="container">
+    @RenderBody() <!--alt viewlar render eder...-->
+    </div>
+
+</body>
+</html>
